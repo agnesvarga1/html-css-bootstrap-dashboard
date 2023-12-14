@@ -1,0 +1,11 @@
+aside {
+  background-image: url("./img/sidebar-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-color: #0f263d;
+}
+
+aside li svg {
+  height: 30px;
+  width: 30px;
+}

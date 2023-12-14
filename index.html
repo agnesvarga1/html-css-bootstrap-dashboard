@@ -15,56 +15,10 @@
     <title>Bootstrap Dashboard</title>
   </head>
   <body>
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="vh-100 ">
+      <!-- nav bar menu -->
+      <nav class="navbar navbar-expand-lg flex-nowrap bg-body-tertiary">
         <div class="container-fluid justify-content-start">
-            <a class="navbar-brand d-xs-none" href="#">
-                <img
-                  class="d-inline-block d-lg-none"
-                  src="./assets/img/mobile-logo.png"
-                  alt="Logo"
-                  width="60"
-                  height="60"
-                />
-                <img
-                  class="d-none d-lg-inline-block"
-                  src="./assets/img/logo.svg"
-                  alt="Logo"
-                  width="150"
-                  height="40"
-                />
-              </a>
-              <form class="d-flex w-75" role="search">
-                <input class="form-control me-2 bg-secondary " type="search" placeholder="Prova a cercare: Lezioni di laravel" aria-label="Search">
-              </form>
-          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button> -->
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-ul" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
-              </svg>
-            </div>
-
-          
-            <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            fill="#FF8F00"
-            class="bi bi-bell-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"
-            />
-          </svg>
-          </div>
-        </div>
-      </nav>
-    <!-- <header>
-      <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
           <a class="navbar-brand d-xs-none" href="#">
             <img
               class="d-inline-block d-lg-none"
@@ -81,12 +35,80 @@
               height="40"
             />
           </a>
-
+          <form class="d-flex w-75" role="search ">
+            <div class="input-group bg-secondary-subtle me-2">
+              <span
+                class="input-group-text bg-secondary-subtle"
+                id="basic-addon1"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                  />
+                </svg>
+              </span>
+              <input
+                class="form-control me-2 bg-secondary-subtle"
+                type="search"
+                placeholder="Prova a cercare: Lezioni di laravel"
+                aria-label="Search"
+              />
+            </div>
+          </form>
+          <div
+            class="collapse navbar-collapse justify-content-evenly"
+            id="navbarSupportedContent"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-list-ul"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-question-circle-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-three-dots-vertical"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"
+              />
+            </svg>
+          </div>
+          <!-- bell icon -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"
             height="20"
-            fill="bg-warning"
+            fill="#FF8F00"
             class="bi bi-bell-fill"
             viewBox="0 0 16 16"
           >
@@ -96,21 +118,229 @@
           </svg>
         </div>
       </nav>
-    </header> -->
-    <main>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col"><aside></aside></div>
+      <!-- dashboard-main -->
+      <main class="container-fluid">
 
-          <div class="row">
-            <div class="col">
-              <div class="main-top"></div>
+
+        <div class="row">
+          <!-- side-bar column -->
+          <aside
+            class="mh-100 col-2 col-lg-1 text-white flex-column "
+          >
+          <div class="row flex-md-column justify-content-between  ">
+            <ul class=" nav flex-column align-items-center px-lg-3" data-bs-theme="dark">
+              <li class="d-flex  align-items-center my-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                  class="bi bi-house-door-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"
+                  />
+                </svg>
+             
+              </li>
+              <li class="d-flex nav-item my-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-graph-down"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M0 0h1v15h15v1H0zm14.817 11.887a.5.5 0 0 0 .07-.704l-4.5-5.5a.5.5 0 0 0-.74-.037L7.06 8.233 3.404 3.206a.5.5 0 0 0-.808.588l4 5.5a.5.5 0 0 0 .758.06l2.609-2.61 4.15 5.073a.5.5 0 0 0 .704.07Z"
+                  />
+                </svg>
+             
+              </li>
+              <li class="d-flex nav-item my-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-reception-4"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5z"
+                  />
+                </svg>
+             
+              </li>
+            </ul>
+          
+            <ul class="nav flex-column align-items-center px-lg-3" data-bs-theme="dark">
+                <li class="d-flex align-items-center my-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-gear-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"
+                    />
+                  </svg>
+             
+                </li>
+              </ul>
+              <!-- Settings nav menu -->
+            
+        </div>
+      
+          </aside>
+
+          <!-- main part of Dashboard  -->
+
+          <div class="col-10">
+            <div class="row " >
+              <div class="col-12 bg-primary">
+                <div class="main-top">
+                    <div class="container text-white">
+                        <div class="row flex-column-reverse flex-md-row">
+                            <div class="col-12 col-md-4 py-2">1</div>
+                            <div class="col-12 col-md-4 py-2">2</div>
+                            <div class="col-12 col-md-4 py-2">3</div>
+                        </div>
+                    </div>
+                </div>
               </div>
-              <div class="col"></div>
-              <div class="main-bottom"></div>
+           
+              <div class="col-12 main-bottom py-5"> 
+                <div class="row">
+                    <div class="col-sm-12 col-lg-7">
+                        <div class="list-group border " >
+                            <a href="#" class="list-group-item list-group-item-action bg-light text-dark w-100" aria-current="true">
+                              The current link item
+                            </a>
+                            <div class="px-4">
+                            <table class="table mx-auto ">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Handle</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td colspan="2">Larry the Bird</td>
+                                    <td>@twitter</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                  Accordion Item #1
+                                </button>
+                              </h2>
+                              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                  Accordion Item #2
+                                </button>
+                              </h2>
+                              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                  Accordion Item #3
+                                </button>
+                              </h2>
+                              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-5">
+                        <div class="list-group border rounded" >
+                            <a href="#" class="list-group-item list-group-item-action active bg-light text-dark" aria-current="true">
+                              The current link item
+                            </a>
+                            <div class="input-group">
+                                <div class="input-group-text">
+                                  <input class="form-check-input mt-0" type="radio" value="" aria-label="Radio button for following text input">
+                                </div>
+                                <input type="text" class="form-control" aria-label="Text input with radio button">
+                              </div>
+                            <div class="input-group">
+                                <div class="input-group-text">
+                                  <input class="form-check-input mt-0" type="radio" value="" aria-label="Radio button for following text input">
+                                </div>
+                                <input type="text" class="form-control" aria-label="Text input with radio button">
+                              </div>
+                          
+                          <div class="input-group">
+                            <div class="input-group-text">
+                              <input class="form-check-input mt-0" type="radio" value="" aria-label="Radio button for following text input">
+                            </div>
+                            <input type="text" class="form-control" aria-label="Text input with radio button">
+                          </div>
+                    </div>
+                    <div class="card w-100 mt-3" >
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">An item</li>
+                          <li class="list-group-item">A second item</li>
+                          <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-body">
+                          <a href="#" class="card-link">Card link</a>
+                          <a href="#" class="card-link">Another link</a>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+              </div>
             </div>
           </div>
         </div>
+
+
+
+
+
       </div>
     </main>
 
