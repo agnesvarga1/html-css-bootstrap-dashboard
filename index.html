@@ -240,15 +240,15 @@
       <!-- MAIN HEADER PART -->
       <div id="main-dashboard " class="container-fluid d-flex flex-column p-0">
         <div class="main-top">
-          <div class="container-fluid bg-primary text-white pt-4">
+          <div class="container-fluid bg-primary text-white pt-2">
             <div
               class="row flex-column-reverse flex-md-row justify-content-md-center"
             >
-              <div class="col-12 col-md-4 py-2 order-md-1">
+              <div class="col-12 col-md-4 order-md-1">
                 <h6>Studenti online</h6>
                 <h2>125</h2>
               </div>
-              <div class="col-12 col-md-4 py-2 order-md-0">
+              <div class="col-12 col-md-4 order-md-0">
                 <h6>
                   Boolean<span class="badge rounded-pill ms-1">Primary</span>
                 </h6>
@@ -290,7 +290,7 @@
                 </div>
               </div>
 
-              <div class="col-12 col-md-4 py-2 order-md-2">
+              <div class="col-12 col-md-4 order-md-2">
                 <h5 class="d-inline-block">Nuovo Studente</h5>
                 <!-- SECTION OFFCANAVAS -->
                
@@ -334,13 +334,14 @@
           </div>
         </div>
 
-        <div class="container-fluid main-bottom py-5 overflow-auto">
-          <div class="row">
-            <div class="col-sm-12 col-lg-7">
+        <div class="container-fluid main-bottom py-3 overflow-auto">
+          <div class="row flex-nowrap">
+            <div class="col-sm-12 col-lg-9 px-0">
+
               <div class="list-group border">
                 <a
                   href="#"
-                  class="list-group-item list-group-item-action bg-light text-dark w-100"
+                  class="list-group-item  bg-light text-dark w-100"
                   aria-current="true"
                 >
                   The current link item
@@ -377,7 +378,9 @@
                   </table>
                 </div>
               </div>
-              <div class="list-group border rounded">
+
+              <!-- F.A.Q. -->
+              <div class="list-group border rounded mt-3">
                 <a
                   href="#"
                   class="list-group-item list-group-item-action  bg-light text-dark"
@@ -386,7 +389,7 @@
                 <h4>F.A.Q.</h4>
                 
                 </a>
-                <div style="width: 95%;" class="accordion accordion-flush mx-auto" id="accordionFlushExample">
+                <div style="width: 95%;" class="accordion accordion-flush mx-auto " id="accordionFlushExample">
                   <div class="accordion-item">
                     <h2 class="accordion-header">
                       <button
@@ -474,8 +477,10 @@
                 </div>
              
             </div>
-            <div class="col-sm-12 col-lg-5">
-              <div class="list-group border rounded">
+
+            <div class="col-sm-12 col-lg-3 ">
+              <!-- TODO LIST -->
+              <div class="list-group border rounded pb-1 ">
                 <a
                   href="#"
                   class="list-group-item list-group-item-action  bg-light text-dark"
@@ -483,20 +488,20 @@
                 >
                 <h4>Todos</h4>
                 </a>
-                <ul style="width: 95%;" class="list-group mx-auto my-3">
-                  <li class="list-group-item"><div class="form-check">
+                <ul style="width: 95%;" class="list-group mx-auto">
+                  <li class="list-group-item py-0 "><div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
                     Kickoff nuove classi
                     </label>
                   </div></li>
-                  <li class="list-group-item"><div class="form-check">
+                  <li class="list-group-item py-0"><div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
                      Lezione su Bootstrap 5 in classe #75
                     </label>
                   </div></li>
-                  <li class="list-group-item"><div class="form-check">
+                  <li class="list-group-item py-0"><div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
                       Controllare username github studenti
@@ -504,30 +509,27 @@
                   </div></li>
                
                 </ul>
-                
-               
-
-               
               </div>
-              <div class="card w-100 mt-3">
-                <img src="..." class="card-img-top" alt="..." />
+              <div class="border border-secondery-subtle rounded p-1 mt-2 ">
+              <div class="card w-100 h-100">
+                <img  src="./assets/img/stats.jpeg" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">Utenti attivi</h5>
                   <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                 Lista degli utenti attivi nel piattaforme nell'ultimo mese
                   </p>
                 </div>
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item">An item</li>
-                  <li class="list-group-item">A second item</li>
-                  <li class="list-group-item">A third item</li>
+                  <li class="list-group-item py-1">Gennaio:1220</li>
+                  <li class="list-group-item py-1">Febbraio:800</li>
+                  <li class="list-group-item py-1">Marzo:1500</li>
                 </ul>
-                <div class="card-body">
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
+                <div class="card-body py-2">
+               
+                  <a href="#" class="card-link">Visualizza report piu approfondito</a>
                 </div>
               </div>
+            </div>
             </div>
           </div>
         </div>
