@@ -1,11 +1,12 @@
-aside {
+#side-bar {
   background-image: url("./img/sidebar-bg.png");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   background-color: #0f263d;
 }
 
-aside li svg {
+#side-bar li svg {
   height: 30px;
   width: 30px;
 }
