@@ -238,21 +238,21 @@
 
       <!-- main part of Dashboard  -->
       <!-- MAIN HEADER PART -->
-      <div id="main-dashboard " class="container-fluid d-flex flex-column p-0 ">
-        <div class="main-top ">
-          <div class="container-fluid bg-primary text-white pt-2">
+      <div id="main-dashboard " class="container-fluid d-flex flex-column p-0">
+        <div class="main-top">
+          <div class="container-fluid bg-primary text-white pt-4">
             <div
               class="row flex-column-reverse flex-md-row justify-content-md-center"
             >
-              <div class="col-12 col-md-4 order-md-1">
+              <div class="col-12 col-md-4 col-lg-3 order-md-1">
                 <h6>Studenti online</h6>
                 <h2>125</h2>
               </div>
-              <div class="col-12 col-md-4 order-md-0">
+              <div class="col-12 col-md-4 col-lg-6 order-md-0">
                 <h6>
                   Boolean<span class="badge rounded-pill ms-1">Primary</span>
                 </h6>
-                <div>
+                <div class="d-flex gap-xl-1">
                   <span class="badge rounded-pill">3 app</span>
                   <span
                     ><svg
@@ -290,35 +290,41 @@
                 </div>
               </div>
 
-              <div class="col-12 col-md-4 order-md-2">
+              <div class="col-12 col-md-4 col-lg-3 order-md-2">
                 <h5 class="d-inline-block">Nuovo Studente</h5>
                 <!-- SECTION OFFCANAVAS -->
-               
-                </svg>
+                <!-- btn to open form offcanvas -->
                 <button
-                    style="height: 40px; width: 40px"
-                    class="btn btn-primary border border-white fs-3 fw-bold ms-1 text-white p-0"
-                    type="button"
-                    data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasRight"
-                    aria-controls="offcanvasRight"
+                  type="button"
+                  class="btn btn-outline-light text-white ms-1"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="#fff"
+                    class="bi bi-plus-lg mb-1"
+                    viewBox="0 0 16 16"
                   >
-                    <span
-                      class="w-100 h-100 d-flex justify-content-center align-items-center"
-                    >
-                      +</span
-                    >
-                  </button>
-
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"
+                    />
+                  </svg>
+                </button>
+                <!-- offcanvas pop out with form -->
                 <div
-                  class="offcanvas offcanvas-end"
+                  class="offcanvas offcanvas-end bg-white"
                   tabindex="-1"
                   id="offcanvasRight"
                   aria-labelledby="offcanvasRightLabel"
                 >
                   <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasRightLabel">
-                      Offcanvas right
+                      Inserisci un nuovo studente
                     </h5>
                     <button
                       type="button"
@@ -327,280 +333,677 @@
                       aria-label="Close"
                     ></button>
                   </div>
-                  <div class="offcanvas-body">...</div>
+                  <div class="offcanvas-body">
+                    <form>
+                      <div class="row">
+                        <div class="mb-3 col-12 col-md-6">
+                          <label for="exampleInputEmail1" class="form-label"
+                            >Nome</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="exampleNome1"
+                          />
+                        </div>
+                        <div class="mb-3 col-12 col-md-6">
+                          <label for="exampleInputEmail1" class="form-label"
+                            >Cognome</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="examplecognome1"
+                          />
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <label for="exampleInputEmail1" class="form-label"
+                            >Email address</label
+                          >
+                          <div class="input-group mb-3">
+                            <span class="input-group-text" id="addon-wrapping"
+                              >@</span
+                            >
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="exampleInputEmail1"
+                              aria-describedby="emailHelp"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="mb-3 col-12 col-md-6">
+                          <label for="exampleInputPassword1" class="form-label"
+                            >Password</label
+                          >
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="exampleInputPassword1"
+                          />
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <label for="exampleInputEmail1" class="form-label"
+                            >Email address</label
+                          >
+                          <div class="input-group mb-3">
+                            <span class="input-group-text" id="addon-wrapping"
+                              >@</span
+                            >
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="exampleInputEmail1"
+                              aria-describedby="emailHelp"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="mb-3 col-12 col-md-6">
+                          <label for="exampleInputPassword1" class="form-label"
+                            >Password</label
+                          >
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="exampleInputPassword1"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="mb-3 col-12">
+                          <label for="exampleInputAdress" class="form-label"
+                            >Indirizzo</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="exampleadress1"
+                          />
+                        </div>
+                        <div class="mb-3 col-12 col-md-6">
+                          <label for="exampleInputCitta" class="form-label"
+                            >Citta</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="examplecitta1"
+                          />
+                        </div>
+                        <div class="mb-3 col-12 col-md-4">
+                          <label for="exampleInputState" class="form-label"
+                            >Stato</label
+                          >
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            id="exampleInputState"
+                          >
+                            <option selected>Scegli...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <div class="mb-3 col-12 col-md-2">
+                          <label for="exampleInputCap" class="form-label"
+                            >CAP</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="examplecap"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="formFile" class="form-label">Foto</label>
+                        <input class="form-control" type="file" id="formFile" />
+                      </div>
+
+                      <!-- Radio button form -->
+                      <div class="mb-3 form-check">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="exampleCheck1"
+                        />
+
+                        <label class="form-check-label" for="exampleCheck1"
+                          >Seleziona per proseguire</label
+                        >
+                      </div>
+                      <button type="submit" class="btn btn-primary">
+                        Salva
+                      </button>
+                      <button type="button" class="btn btn-warning">
+                        Svouta
+                      </button>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="container-fluid main-bottom py-3 overflow-auto">
-          <div class="row ">
+        <div class="container-fluid main-bottom py-4 overflow-auto">
+          <div class="row">
             <!-- DASHBOARD LEFT COL -->
             <div class="col-sm-12 col-lg-9 px-3">
-
-              <div class="list-group border">
-                <a
-                  href="#"
-                  class="list-group-item  bg-light text-dark w-100"
-                  aria-current="true"
-                >
-                  The current link item
-                </a>
+              <div class="card">
+                <div class="card-header"><h2>Prossime classi</h2></div>
                 <div class="px-4">
-                  <table class="table mx-auto text-center">
+                  <table class="table mx-auto text-center align-middle">
                     <thead>
                       <tr>
-                       
-                        <td class="text-start"scope="col">Nome</td>
-                        <td class="d-none d-md-table-cell" >Data inizio</td>
-                        <td class="d-none d-lg-table-cell" >ROI</td>
+                        <td class="text-start" scope="col">Nome</td>
+                        <td class="d-none d-md-table-cell">Data inizio</td>
+                        <td class="d-none d-lg-table-cell">ROI</td>
                         <td scope="col">Stato</td>
                         <td scope="col">Azioni</td>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td class="text-start" ><img class="img-fluid" src="./assets/img/class-avatar.jpg" alt=""   width="25"
-                          height="25"> Classe 75</td>
-                          <td class="d-none d-md-table-cell" >15 Feb 2022</td>
-                          <td class="d-none d-lg-table-cell" >20%</td>
+                        <td class="text-start ve">
+                          <img
+                            class="img-fluid"
+                            src="./assets/img/class-avatar.jpg"
+                            alt=""
+                            width="25"
+                            height="25"
+                          />
+                          Classe 75
+                        </td>
+                        <td class="d-none d-md-table-cell">15 Feb 2022</td>
+                        <td class="d-none d-lg-table-cell">20%</td>
                         <td><span class="badge text-bg-success">Done</span></td>
-                        <td class="text-secondary"><button type="button" class="btn btn-outline-secondary"><svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill mb-1" viewBox="0 0 16 16">
-                          <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
-                        </svg></button>
-                        <button type="button" class="btn btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill mb-1" viewBox="0 0 16 16">
-                          <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
-                        </svg></button>
-                      </td>
+                        <td class="text-secondary">
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-pencil-fill mb-1"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"
+                              />
+                            </svg>
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-trash3-fill mb-1"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"
+                              />
+                            </svg>
+                          </button>
+                        </td>
                       </tr>
                       <tr>
-                        <td class="text-start" ><img class="img-fluid" src="./assets/img/class-avatar.jpg" alt=""   width="25"
-                          height="25"> Classe 75</td>
-                          <td class="d-none d-md-table-cell" >15 Feb 2022</td>
-                          <td class="d-none d-lg-table-cell" >20%</td>
-                        <td><span class="badge text-bg-warning text-white">Progress</span></td>
-                        <td class="text-secondary"><button type="button" class="btn btn-outline-secondary"><svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill mb-1" viewBox="0 0 16 16">
-                          <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
-                        </svg></button>
-                        <button type="button" class="btn btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill mb-1" viewBox="0 0 16 16">
-                          <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
-                        </svg></button>
-                      </td>
+                        <td class="text-start">
+                          <img
+                            class="img-fluid"
+                            src="./assets/img/class-avatar.jpg"
+                            alt=""
+                            width="25"
+                            height="25"
+                          />
+                          Classe 75
+                        </td>
+                        <td class="d-none d-md-table-cell">15 Feb 2022</td>
+                        <td class="d-none d-lg-table-cell">20%</td>
+                        <td>
+                          <span class="badge text-bg-warning text-white"
+                            >Progress</span
+                          >
+                        </td>
+                        <td class="text-secondary">
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-pencil-fill mb-1"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"
+                              />
+                            </svg>
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-trash3-fill mb-1"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"
+                              />
+                            </svg>
+                          </button>
+                        </td>
                       </tr>
                       <tr>
-                        <td class="text-start" ><img class="img-fluid" src="./assets/img/class-avatar.jpg" alt=""   width="25"
-                          height="25"> Classe 75</td>
-                          <td class="d-none d-md-table-cell" >15 Feb 2022</td>
-                          <td class="d-none d-lg-table-cell" >20%</td>
+                        <td class="text-start">
+                          <img
+                            class="img-fluid"
+                            src="./assets/img/class-avatar.jpg"
+                            alt=""
+                            width="25"
+                            height="25"
+                          />
+                          Classe 75
+                        </td>
+                        <td class="d-none d-md-table-cell">15 Feb 2022</td>
+                        <td class="d-none d-lg-table-cell">20%</td>
                         <td><span class="badge text-bg-success">Done</span></td>
-                        <td class="text-secondary"><button type="button" class="btn btn-outline-secondary"><svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill mb-1" viewBox="0 0 16 16">
-                          <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
-                        </svg></button>
-                        <button type="button" class="btn btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill mb-1" viewBox="0 0 16 16">
-                          <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
-                        </svg></button>
-                      </td>
+                        <td class="text-secondary">
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-pencil-fill mb-1"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"
+                              />
+                            </svg>
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-trash3-fill mb-1"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"
+                              />
+                            </svg>
+                          </button>
+                        </td>
                       </tr>
                       <tr>
-                        <td class="text-start" ><img class="img-fluid" src="./assets/img/class-avatar.jpg" alt=""   width="25"
-                          height="25"> Classe 75</td>
-                          <td class="d-none d-md-table-cell" >15 Feb 2022</td>
-                          <td class="d-none d-lg-table-cell" >20%</td>
-                        <td><span class="badge text-bg-warning text-white">Progress</span></td>
-                        <td class="text-secondary"><button type="button" class="btn btn-outline-secondary"><svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill mb-1" viewBox="0 0 16 16">
-                          <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
-                        </svg></button>
-                        <button type="button" class="btn btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill mb-1" viewBox="0 0 16 16">
-                          <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
-                        </svg></button>
-                      </td>
+                        <td class="text-start">
+                          <img
+                            class="img-fluid"
+                            src="./assets/img/class-avatar.jpg"
+                            alt=""
+                            width="25"
+                            height="25"
+                          />
+                          Classe 75
+                        </td>
+                        <td class="d-none d-md-table-cell">15 Feb 2022</td>
+                        <td class="d-none d-lg-table-cell">20%</td>
+                        <td>
+                          <span class="badge text-bg-warning text-white"
+                            >Progress</span
+                          >
+                        </td>
+                        <td class="text-secondary">
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-pencil-fill mb-1"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"
+                              />
+                            </svg>
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-trash3-fill mb-1"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"
+                              />
+                            </svg>
+                          </button>
+                        </td>
                       </tr>
                       <tr>
-                        <td class="text-start" ><img class="img-fluid" src="./assets/img/class-avatar.jpg" alt=""   width="25"
-                          height="25"> Classe 75</td>
-                          <td class="d-none d-md-table-cell" >15 Feb 2022</td>
-                          <td class="d-none d-lg-table-cell" >20%</td>
-                        <td><span class="badge text-bg-danger">Failed</span></td>
-                        <td class="text-secondary"><button type="button" class="btn btn-outline-secondary"><svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill mb-1" viewBox="0 0 16 16">
-                          <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
-                        </svg></button>
-                        <button type="button" class="btn btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill mb-1" viewBox="0 0 16 16">
-                          <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
-                        </svg></button>
-                      </td>
+                        <td class="text-start">
+                          <img
+                            class="img-fluid"
+                            src="./assets/img/class-avatar.jpg"
+                            alt=""
+                            width="25"
+                            height="25"
+                          />
+                          Classe 75
+                        </td>
+                        <td class="d-none d-md-table-cell">15 Feb 2022</td>
+                        <td class="d-none d-lg-table-cell">20%</td>
+                        <td>
+                          <span class="badge text-bg-danger">Failed</span>
+                        </td>
+                        <td class="text-secondary">
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-pencil-fill mb-1"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"
+                              />
+                            </svg>
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-trash3-fill mb-1"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"
+                              />
+                            </svg>
+                          </button>
+                        </td>
                       </tr>
                       <tr>
-                        <td class="text-start" ><img class="img-fluid" src="./assets/img/class-avatar.jpg" alt=""   width="25"
-                          height="25"> Classe 75</td>
-                          <td class="d-none d-md-table-cell" >15 Feb 2022</td>
-                          <td class="d-none d-lg-table-cell" >20%</td>
+                        <td class="text-start">
+                          <img
+                            class="img-fluid"
+                            src="./assets/img/class-avatar.jpg"
+                            alt=""
+                            width="25"
+                            height="25"
+                          />
+                          Classe 75
+                        </td>
+                        <td class="d-none d-md-table-cell">15 Feb 2022</td>
+                        <td class="d-none d-lg-table-cell">20%</td>
                         <td><span class="badge text-bg-success">Done</span></td>
-                        <td class="text-secondary"><button type="button" class="btn btn-outline-secondary"><svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill mb-1" viewBox="0 0 16 16">
-                          <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
-                        </svg></button>
-                        <button type="button" class="btn btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill mb-1" viewBox="0 0 16 16">
-                          <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
-                        </svg></button>
-                      </td>
+                        <td class="text-secondary">
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-pencil-fill mb-1"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"
+                              />
+                            </svg>
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-trash3-fill mb-1"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"
+                              />
+                            </svg>
+                          </button>
+                        </td>
                       </tr>
-                   
                     </tbody>
                   </table>
                 </div>
               </div>
 
               <!-- F.A.Q. -->
-              <div class="list-group border rounded mt-3">
-                <a
-                  href="#"
-                  class="list-group-item list-group-item-action  bg-light text-dark"
-                  aria-current="true"
-                >
-                <h4>F.A.Q.</h4>
-                
-                </a>
-                <div style="width: 95%;" class="accordion accordion-flush mx-auto " id="accordionFlushExample">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseOne"
-                        aria-expanded="false"
-                        aria-controls="flush-collapseOne"
+              <div class="card mt-2">
+                <div class="card-header">
+                  <h2>F.A.Q.</h2>
+                </div>
+                <div class="card-body">
+                  <div
+                    class="accordion accordion-flush mx-auto"
+                    id="accordionFlushExample"
+                  >
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseOne"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseOne"
+                        >
+                          Come agguingere un nuove studente?
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseOne"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample"
                       >
-                      Come agguingere un nuove studente?
-                      </button>
-                    </h2>
-                    <div
-                      id="flush-collapseOne"
-                      class="accordion-collapse collapse"
-                      data-bs-parent="#accordionFlushExample"
-                    >
-                      <div class="accordion-body">
-                        Placeholder content for this accordion, which is intended
-                        to demonstrate the
-                        <code>.accordion-flush</code> class. This is the first
-                        item's accordion body.
+                        <div class="accordion-body">
+                          Placeholder content for this accordion, which is
+                          intended to demonstrate the
+                          <code>.accordion-flush</code> class. This is the first
+                          item's accordion body.
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseTwo"
-                        aria-expanded="false"
-                        aria-controls="flush-collapseTwo"
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseTwo"
+                        >
+                          Come posso accedere alle informazioni del mio account?
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseTwo"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample"
                       >
-                       Come posso accedere alle informazioni del mio account?
-                      </button>
-                    </h2>
-                    <div
-                      id="flush-collapseTwo"
-                      class="accordion-collapse collapse"
-                      data-bs-parent="#accordionFlushExample"
-                    >
-                      <div class="accordion-body">
-                        Placeholder content for this accordion, which is intended
-                        to demonstrate the
-                        <code>.accordion-flush</code> class. This is the second
-                        item's accordion body. Let's imagine this being filled
-                        with some actual content.
+                        <div class="accordion-body">
+                          Placeholder content for this accordion, which is
+                          intended to demonstrate the
+                          <code>.accordion-flush</code> class. This is the
+                          second item's accordion body. Let's imagine this being
+                          filled with some actual content.
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseThree"
-                        aria-expanded="false"
-                        aria-controls="flush-collapseThree"
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseThree"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseThree"
+                        >
+                          Posso usare questo dashboard de mobile?
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseThree"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample"
                       >
-                       Posso usare questo dashboard de mobile?
-                      </button>
-                    </h2>
-                    <div
-                      id="flush-collapseThree"
-                      class="accordion-collapse collapse"
-                      data-bs-parent="#accordionFlushExample"
-                    >
-                      <div class="accordion-body">
-                        Placeholder content for this accordion, which is intended
-                        to demonstrate the
-                        <code>.accordion-flush</code> class. This is the third
-                        item's accordion body. Nothing more exciting happening
-                        here in terms of content, but just filling up the space to
-                        make it look, at least at first glance, a bit more
-                        representative of how this would look in a real-world
-                        application.
+                        <div class="accordion-body">
+                          Placeholder content for this accordion, which is
+                          intended to demonstrate the
+                          <code>.accordion-flush</code> class. This is the third
+                          item's accordion body. Nothing more exciting happening
+                          here in terms of content, but just filling up the
+                          space to make it look, at least at first glance, a bit
+                          more representative of how this would look in a
+                          real-world application.
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                </div>
-             
+              </div>
             </div>
             <!-- DASHBOARD RIGHT COL -->
             <div class="col-sm-12 col-lg-3">
               <!-- TODO LIST -->
-              <div class="list-group border rounded pb-1 ">
-                <a
-                  href="#"
-                  class="list-group-item list-group-item-action  bg-light text-dark"
-                  aria-current="true"
-                >
-                <h4>Todos</h4>
-                </a>
-                <ul style="width: 95%;" class="list-group mx-auto my-2">
-                  <li class="list-group-item py-0 "><div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                    Kickoff nuove classi
-                    </label>
-                  </div></li>
-                  <li class="list-group-item py-0"><div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                     Lezione su Bootstrap 5 in classe #75
-                    </label>
-                  </div></li>
-                  <li class="list-group-item py-0"><div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                      Controllare username github studenti
-                    </label>
-                  </div></li>
-               
-                </ul>
-              </div>
-              <div class="border border-secondery-subtle rounded p-2 mt-2 ">
-              <div class="card w-100 h-100">
-                <img  src="./assets/img/stats.jpeg" class="card-img-top" alt="..." />
+              <div class="card">
+                <div class="card-header">
+                  <h3>Todo</h3>
+                </div>
                 <div class="card-body">
-                  <h5 class="card-title">Utenti attivi</h5>
-                  <p class="card-text">
-                 Lista degli utenti attivi nel piattaforme nell'ultimo mese
-                  </p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item py-1">Gennaio:1220</li>
-                  <li class="list-group-item py-1">Febbraio:800</li>
-                  <li class="list-group-item py-1">Marzo:1500</li>
-                </ul>
-                <div class="card-body py-2">
-               
-                  <a href="#" class="card-link">Visualizza report piu approfondito</a>
+                  <ul class="list-group">
+                    <li class="list-group-item py-0">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Kickoff nuove classi
+                        </label>
+                      </div>
+                    </li>
+                    <li class="list-group-item py-0">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Lezione su Bootstrap 5 in classe #75
+                        </label>
+                      </div>
+                    </li>
+                    <li class="list-group-item py-0">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Controllare username github studenti
+                        </label>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
               </div>
-            </div>
+
+              <div class="border border-secondery-subtle rounded p-2 mt-2">
+                <div class="card w-100 h-100">
+                  <img
+                    src="./assets/img/stats.jpeg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Utenti attivi</h5>
+                    <p class="card-text">
+                      Lista degli utenti attivi nel piattaforme nell'ultimo mese
+                    </p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item py-1">Gennaio:1220</li>
+                    <li class="list-group-item py-1">Febbraio:800</li>
+                    <li class="list-group-item py-1">Marzo:1500</li>
+                  </ul>
+                  <div class="card-body py-2">
+                    <a href="#" class="card-link"
+                      >Visualizza report piu approfondito</a
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

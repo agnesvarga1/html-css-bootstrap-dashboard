@@ -14,3 +14,15 @@
 .main-top .badge {
   background-color: #165bba;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  #offcanvasRight {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #offcanvasRight {
+    width: 50%;
+  }
+}
