@@ -149,15 +149,15 @@
       <!-- side-bar column -->
       <div
         id="side-bar"
-        class="text-white d-flex flex-column justify-content-between h-100 p-3"
+        class="text-white d-flex flex-column justify-content-between h-100 p-2"
         style="width: fit-content"
       >
         <div>
           <ul
-            class="nav flex-column align-items-center mt-2 px-lg-3 gap-2"
+            class="nav flex-column align-items-center mt-2 px-lg-3"
             data-bs-theme="dark"
           >
-            <li class="d-flex gap-2 align-items-center">
+            <li class="nav-item d-flex gap-2 align-items-center p-3">
               <a class="text-white text-decoration-none" href="">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -171,10 +171,10 @@
                     d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"
                   />
                 </svg>
-                <span class="d-none d-lg-inline-block">Home </span>
               </a>
+              <span class="d-none d-lg-inline-block">Home </span>
             </li>
-            <li class="d-flex nav-item my-2">
+            <li class="d-flex nav-item my-2 gap-2 p-3">
               <a class="text-white text-decoration-none" href="">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -189,33 +189,35 @@
                     d="M0 0h1v15h15v1H0zm14.817 11.887a.5.5 0 0 0 .07-.704l-4.5-5.5a.5.5 0 0 0-.74-.037L7.06 8.233 3.404 3.206a.5.5 0 0 0-.808.588l4 5.5a.5.5 0 0 0 .758.06l2.609-2.61 4.15 5.073a.5.5 0 0 0 .704.07Z"
                   />
                 </svg>
-                <span class="d-none d-lg-inline-block">Stats</span>
               </a>
+              <span class="d-none d-lg-inline-block">Stats</span>
             </li>
-            <li class="d-flex gap-2 nav-item my-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-reception-4"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5z"
-                />
-              </svg>
+            <li class="d-flex gap-2 nav-item my-2 p-3">
+              <a class="text-white" href="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-reception-4"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5z"
+                  />
+                </svg>
+              </a>
               <span class="d-none d-lg-inline-block">Signal</span>
             </li>
           </ul>
         </div>
-        <!-- Settings nav menu -->
+        <!-- Settings Admin nav menu -->
         <div>
           <ul
             class="nav flex-column align-items-center mt-2 px-lg-3 gap-2"
             data-bs-theme="dark"
           >
-            <li class="d-flex gap-2 align-items-center my-2">
+            <li class="d-flex nav-item gap-2 align-items-center my-2 p-3">
               <a class="text-white" href="">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -230,7 +232,7 @@
                   />
                 </svg>
               </a>
-              <span class="d-none d-lg-inline-block">Admin</span>
+              <span class="d-none d-lg-inline">Admin</span>
             </li>
           </ul>
         </div>
@@ -384,7 +386,7 @@
                           />
                         </div>
                         <div class="col-12 col-md-6">
-                          <label for="exampleInputEmail1" class="form-label"
+                          <label for="exampleInputEmail2" class="form-label"
                             >Email address</label
                           >
                           <div class="input-group mb-3">
@@ -394,20 +396,20 @@
                             <input
                               type="email"
                               class="form-control"
-                              id="exampleInputEmail1"
+                              id="exampleInputEmail2"
                               aria-describedby="emailHelp"
                             />
                           </div>
                         </div>
 
                         <div class="mb-3 col-12 col-md-6">
-                          <label for="exampleInputPassword1" class="form-label"
+                          <label for="exampleInputPassword2" class="form-label"
                             >Password</label
                           >
                           <input
                             type="password"
                             class="form-control"
-                            id="exampleInputPassword1"
+                            id="exampleInputPassword2"
                           />
                         </div>
                       </div>
@@ -491,14 +493,16 @@
           </div>
         </div>
 
-        <div class="container-fluid main-bottom py-4 overflow-auto">
+        <div class="container-fluid main-bottom py-3 overflow-auto">
           <div class="row">
             <!-- DASHBOARD LEFT COL -->
             <div class="col-sm-12 col-lg-9 px-3">
               <div class="card">
-                <div class="card-header"><h2>Prossime classi</h2></div>
+                <div class="card-header"><h4>Prossime classi</h4></div>
                 <div class="px-4">
-                  <table class="table mx-auto text-center align-middle">
+                  <table
+                    class="table mx-auto text-center align-middle table-hover"
+                  >
                     <thead>
                       <tr>
                         <td class="text-start" scope="col">Nome</td>
@@ -833,7 +837,7 @@
               <!-- F.A.Q. -->
               <div class="card mt-2">
                 <div class="card-header">
-                  <h2>F.A.Q.</h2>
+                  <h4>F.A.Q.</h4>
                 </div>
                 <div class="card-body">
                   <div
@@ -936,7 +940,7 @@
                 </div>
                 <div class="card-body">
                   <ul class="list-group">
-                    <li class="list-group-item py-0">
+                    <li class="list-group-item py-1">
                       <div class="form-check">
                         <input
                           class="form-check-input"
@@ -949,7 +953,7 @@
                         </label>
                       </div>
                     </li>
-                    <li class="list-group-item py-0">
+                    <li class="list-group-item py-1">
                       <div class="form-check">
                         <input
                           class="form-check-input"
@@ -962,7 +966,7 @@
                         </label>
                       </div>
                     </li>
-                    <li class="list-group-item py-0">
+                    <li class="list-group-item py-1">
                       <div class="form-check">
                         <input
                           class="form-check-input"
